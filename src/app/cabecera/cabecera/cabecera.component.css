@@ -1,0 +1,19 @@
+mat-toolbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    font-family: Century Gothic;
+    font-size: 25px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .btnIngresar{
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    font-family: Century Gothic ;
+    font-size: 15px;
+  }
