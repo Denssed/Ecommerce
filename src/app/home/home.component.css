@@ -1,0 +1,21 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.titulos {
+  font-size: 13px;
+}
+
+.wrapper-contenido{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}

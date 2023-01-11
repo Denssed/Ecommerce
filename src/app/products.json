@@ -1,0 +1,178 @@
+{"products": [
+    {
+        "nombre": "Flauta dulce",
+        "marca": "",
+        "tipo": "viento",
+        "imagen": "./assets/Imagenes/FlautaDulce.png"
+    },
+    {
+        "nombre": "Flauta traversa",
+        "marca": "",
+        "tipo": "viento",
+        "imagen": "./assets/Imagenes/FlautaTraversa.png"
+    },
+    {
+        "nombre": "Trompeta",
+        "marca": "",
+        "tipo": "viento",
+        "imagen": "./assets/Imagenes/Trompeta.png"
+    },
+    {
+        "nombre": "Trombón",
+        "marca": "",
+        "tipo": "viento",
+        "imagen": "./assets/Imagenes/Trombón.png"
+    },
+    {
+        "nombre": "Fagot ",
+        "marca": "",
+        "tipo": "viento",
+        "imagen": "./assets/Imagenes/Fagot.png"
+    },
+    {
+        "nombre": "Tuba",
+        "marca": "",
+        "tipo": "viento",
+        "imagen": "./assets/Imagenes/Tuba.png"
+    },
+    {
+        "nombre": "Saxofón ",
+        "marca": "",
+        "tipo": "viento",
+        "imagen": "./assets/Imagenes/Saxofon.png"
+    },
+    {
+        "nombre": "Guitarra acústica",
+        "marca": "",
+        "tipo": "cuerda",
+        "imagen": "./assets/Imagenes/GuitarraAcustica.png"
+    },
+    {
+        "nombre": "Violín",
+        "marca": "",
+        "tipo": "cuerda",
+        "imagen": "./assets/Imagenes/Violin.png"
+    },
+    {
+        "nombre": "Viola",
+        "marca": "",
+        "tipo": "cuerda",
+        "imagen": "./assets/Imagenes/Viola.png"
+    },
+    {
+        "nombre": "Violonchelo",
+        "marca": "",
+        "tipo": "cuerda",
+        "imagen": "./assets/Imagenes/Violonchelo.png"
+    },
+    {
+        "nombre": "Contrabajo",
+        "marca": "",
+        "tipo": "cuerda",
+        "imagen": "./assets/Imagenes/Contrabajo.png"
+    },
+    {
+        "nombre": "Arpa",
+        "marca": "",
+        "tipo": "cuerda",
+        "imagen": "./assets/Imagenes/Arpa.png"
+    },
+    {
+        "nombre": "Piano",
+        "marca": "",
+        "tipo": "cuerda",
+        "imagen": "./assets/Imagenes/Piano.png"
+    },
+    {
+        "nombre": "Congas",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Congas.png"
+    },
+    {
+        "nombre": "Bongoes",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Bongoes.png"
+    },
+    {
+        "nombre": "Maracas",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Maracas.png"
+    },
+    {
+        "nombre": "Campana",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Campana.png"
+    },
+    {
+        "nombre": "Bombo",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Bombo.png"
+    },
+    {
+        "nombre": "Redoblante",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Redoblante.jpg"
+    },
+    {
+        "nombre": "Platillos",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Platillos.jpg"
+    },
+    {
+        "nombre": "Marimba",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Marimba.jpg"
+    },
+    {
+        "nombre": "Cajón",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Cajon.jpg"
+    },
+    {
+        "nombre": "Cortina",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Cortina.jpg"
+    },
+    {
+        "nombre": "Claves ",
+        "marca": "",
+        "tipo": "percusion",
+        "imagen": "./assets/Imagenes/Claves.jpg"
+    },
+    {
+        "nombre": "Teclado",
+        "marca": "",
+        "tipo": "electrófonos",
+        "imagen": "./assets/Imagenes/Teclado.jpg"
+    },
+    {
+        "nombre": "Guitarra eléctrica",
+        "marca": "",
+        "tipo": "electrófonos",
+        "imagen": "./assets/Imagenes/GuitarraElectrica.jpg"
+    },
+    {
+        "nombre": "Batería",
+        "marca": "",
+        "tipo": "electrófonos",
+        "imagen": "./assets/Imagenes/Bateria.jpg"
+    },
+    {
+        "nombre": "Violín eléctrico",
+        "marca": "",
+        "tipo": "electrófonos",
+        "imagen": "./assets/Imagenes/ViolinElectrico.jpg"
+    }
+]
+}
+

@@ -1,0 +1,23 @@
+
+<div id="myBtnContainer">
+  <button class="btn" onclick="filterSelection('all')"> Todo </button>
+  <button class="btn" onclick="filterSelection('cuerda')"> Cuerda </button>
+  <button class="btn" onclick="filterSelection('percusion')"> Percusion </button>
+  <button class="btn" onclick="filterSelection('viento')"> Viento </button>
+</div>
+
+<div class="wrapper-contenido">
+  <div class="contenido">
+    
+    <app-product-card 
+    *ngFor="let product of products"
+     [nombre]="product.nombre"
+     [marca]="product.marca"
+     [tipo]="product.tipo"
+     [img]="product.imagen"
+     ></app-product-card>
+  
+  </div>
+</div>
+
+
