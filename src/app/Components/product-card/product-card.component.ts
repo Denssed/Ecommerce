@@ -1,5 +1,7 @@
 import { Input } from '@angular/core';
 import { Component } from '@angular/core';
+import angular from 'angular';
+import { CabeceraComponent } from 'src/app/cabecera/cabecera.component';
 
 @Component({
   selector: 'app-product-card',
@@ -14,4 +16,11 @@ export class ProductCardComponent {
   @Input() img = '';
 
 
+  public addToCart() {
+    CabeceraComponent.cn += 1; 
+  }
+
+}
+interface GlobalDocumentProps {
+  num: BigInteger;
 }
