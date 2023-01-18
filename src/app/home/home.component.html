@@ -12,11 +12,7 @@
     
     <app-product-card 
     *ngFor="let product of products"
-     [nombre]="product.nombre"
-     [marca]="product.marca"
-     [tipo]="product.tipo"
-     [costo]="product.costo"
-     [img]="product.imagen"
+     [product]="product"
      ></app-product-card>
   
   </div>

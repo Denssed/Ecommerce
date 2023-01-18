@@ -1,13 +1,13 @@
 
     
-    <div class="card column" [class]="tipo" style="width: 16rem;">
-        <img [src]="img" class="card-img-top img" [alt]="nombre">
+    <div class="card column" [class]="product.tipo" style="width: 16rem;">
+        <img [src]="product.imagen" class="card-img-top img" [alt]="product.nombre">
         <div class="card-body">
-          <h5 class="card-title">{{nombre}}</h5>
-          <p class="card-text">{{tipo}}</p>
-          <p class="card-text">${{costo}}</p>
+          <h5 class="card-title">{{product.nombre}}</h5>
+          <p class="card-text">{{product.tipo}}</p>
+          <p class="card-text">${{product.costo}}</p>
           <a href="#" class="btn btn-primary" 
-          (click)="addToCart();">
+          (click)="addToCart(product);">
           Agregar al carro</a>
         </div>
       </div>

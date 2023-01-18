@@ -9,16 +9,15 @@ import { CabeceraComponent } from 'src/app/cabecera/cabecera.component';
 })
 export class ProductCardComponent {
 
-  @Input() nombre = '';
-  @Input() marca = '';
-  @Input() tipo = '';
-  @Input() img = '';
-  @Input() costo= '';
+  @Input() product : any={};
 
 
-  public addToCart() {
-    // *ngFor "let product = productos"
 
+  public addToCart(product:any) {
+   let StorageActual = JSON.parse(localStorage.getItem('products') || '[]');
+   let storage = localStorage.setItem('products', JSON.stringify([...StorageActual,product]))
+   console.log(JSON.parse(localStorage.getItem('products') || '[]'));
+   
   }
 
   public addPedido() {
