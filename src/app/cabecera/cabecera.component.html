@@ -1,11 +1,14 @@
 
     <mat-toolbar color="primary">
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-         <mat-icon>menu</mat-icon>
-       </button>
-       <span class="nombrePagina"> Stock Musical</span>
-   
-       <span class="example-spacer"></span>
-       <button class="btnIngresar" mat-raised-button >Ingresar</button>
-     </mat-toolbar>
-   
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="nombrePagina"> Stock Musical</span>
+      <div class="user-section" *ngIf="usuario">
+      <mat-icon>account_circle</mat-icon>
+      <span>{{usuario}}</span>
+      </div>
+
+      <span class="example-spacer"></span>
+      <button mat-raised-button (click)="cerrarSesion()" >Cerrar Sesion</button>
+    </mat-toolbar>

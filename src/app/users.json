@@ -1,0 +1,19 @@
+{"users": [
+    {
+        "email": "jorge@gmail.com",
+        "usuario": "Jorge",
+        "apellido": "Molina",
+        "password": "123",
+        "cedula": "0950145102",
+        "edad":"21"
+    },
+    {
+        "email": "geraldine@gmail.com",
+        "usuario": "Geraldine",
+        "apellido": "Roca",
+        "password": "123",
+        "cedula": "0997853705",
+        "edad":"22"
+    }
+]
+}

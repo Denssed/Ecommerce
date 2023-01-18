@@ -1,0 +1,19 @@
+<p>Login works!</p>
+
+<div *ngIf="alert" class="alert alert-danger alert-dismissible" role="alert" data-auto-dismiss>
+    <strong>Acceso incrorrecto!</strong> Verificar el usuario y/o la contraseña.
+</div>
+
+<form [formGroup]="usuarioLogin" (ngSubmit)="onSubmit()">
+    <mat-form-field class="campos-field">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput placeholder="Ex. pat@gmail.com" formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field class="campos-field">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="Password" formControlName="password">
+    </mat-form-field>
+
+    <button mat-raised-button [disabled] = "!usuarioLogin.valid">Aceptar</button>
+</form>
