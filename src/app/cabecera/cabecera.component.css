@@ -31,3 +31,7 @@ mat-toolbar {
     background-color: cadetblue;
     color: whitesmoke;
   }
+
+a {
+  text-decoration: none;
+}

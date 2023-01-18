@@ -16,6 +16,8 @@ import { ProductCardComponent } from './Components/product-card/product-card.com
 import { CartComponent } from './pedido/cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { MatDialogRef } from '@angular/material/dialog';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -33,13 +35,9 @@ import { ProfileComponent } from './profile/profile.component';
     ProductCardComponent,
     CartComponent,
     LoginComponent,
+    DashboardComponent,
   ],
   imports: [
-    MatInputModule,
-    MatIconModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -49,12 +47,10 @@ import { ProfileComponent } from './profile/profile.component';
   bootstrap: [
     AppComponent
   ],
-  providers: [
-    {
-      provide: MatDialogRef,
-      useValue: {}
-    },
-    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},
+  providers: [{
+    provide: MatDialogRef,
+    useValue: {}
+  },
   ]
 })
 export class AppModule { }

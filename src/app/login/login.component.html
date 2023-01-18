@@ -1,7 +1,7 @@
 <p>Login works!</p>
 
 <div *ngIf="alert" class="alert alert-danger alert-dismissible" role="alert" data-auto-dismiss>
-    <strong>Acceso incrorrecto!</strong> Verificar el usuario y/o la contraseña.
+    <strong>Acceso incorrecto!</strong> Verificar el usuario y/o la contraseña.
 </div>
 
 <form [formGroup]="usuarioLogin" (ngSubmit)="onSubmit()">

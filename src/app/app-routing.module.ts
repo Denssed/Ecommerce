@@ -6,14 +6,11 @@ import { ProfileComponent } from './profile/profile.component';
 import { CartComponent } from './pedido/cart/cart.component';
 
 const routes:Routes=[
-  {path:'',component:LoginComponent},
+  {path:'',component:HomeComponent},
   {path:'home',component:HomeComponent},
   // {path:'dashboard',component:DashboardComponent},
   {path:'login', component:LoginComponent},
   {path:'profile', component:ProfileComponent},
-  // {path:'cart', component:CartComponent},
-  // {path:'test1', component:testComponent},
-  // {path:'test2', component:testComponent},
   { path: 'cart', component: CartComponent }
 ]
 @NgModule({

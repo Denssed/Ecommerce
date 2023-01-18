@@ -1,6 +1,5 @@
 import { Input } from '@angular/core';
 import { Component } from '@angular/core';
-import { CabeceraComponent } from 'src/app/cabecera/cabecera.component';
 
 @Component({
   selector: 'app-product-card',
@@ -11,8 +10,6 @@ export class ProductCardComponent {
 
   @Input() product : any={};
 
-
-
   public addToCart(product:any) {
    let StorageActual = JSON.parse(localStorage.getItem('products') || '[]');
    let storage = localStorage.setItem('products', JSON.stringify([...StorageActual,product]))
@@ -20,11 +17,4 @@ export class ProductCardComponent {
    
   }
 
-  public addPedido() {
-    CabeceraComponent.cn += 1; 
-  }
-
-}
-interface GlobalDocumentProps {
-  num: BigInteger;
 }
