@@ -14,11 +14,15 @@ import { HomeComponent } from './home/home.component';
 import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
 import { ProductCardComponent } from './Components/product-card/product-card.component';
 import { CartComponent } from './pedido/cart/cart.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+
 
 
 
 @NgModule({
   declarations: [
+    ProfileComponent,
     AppComponent,
     CabeceraComponent,
     BannerComponent,
@@ -27,16 +31,30 @@ import { CartComponent } from './pedido/cart/cart.component';
     HomeComponent,
     PiePaginaComponent,
     ProductCardComponent,
-    CartComponent
-    ],
+    CartComponent,
+    LoginComponent,
+  ],
   imports: [
+    MatInputModule,
+    MatIconModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     MatGridListModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ],
+  providers: [
+    {
+      provide: MatDialogRef,
+      useValue: {}
+    },
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},
+  ]
 })
 export class AppModule { }

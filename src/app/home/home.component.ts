@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import productsData from '../products.json';
+import { Router } from '@angular/router';
+import productsData from '../products.json'
 
 @Component({
   selector: 'Home',
@@ -8,6 +9,12 @@ import productsData from '../products.json';
 })
 export class HomeComponent {
 
+  constructor(private router: Router) {}
+
   products = productsData.products;
+
+  openProfile(){
+    this.router.navigate(['/profile']);
+  }
 
 }

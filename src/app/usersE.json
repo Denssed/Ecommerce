@@ -1,0 +1,19 @@
+{"usersE": [
+    {
+        "email": "carlos@gmail.com",
+        "usuario": "Carlos",
+        "apellido": "Carranza",
+        "password": "198",
+        "id": "0975849310",
+        "edad":"23"
+    },
+    {
+        "email": "jeremy@gmail.com",
+        "usuario": "Jeremy",
+        "apellido": "Rodriguez",
+        "password": "198",
+        "id": "0924835812",
+        "edad":"21"
+    }
+]
+}
