@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
   cart = [] 
-  displayedColumns: string[] = ['nombre', 'marca', 'tipo', 'costo', 'imagen'];
-  transactions: any[] = this.cart;
+  displayedColumns: string[] = ['nombre', 'marca', 'tipo', 'costo', 'imagen', 'action'];
+  transactions: any[]=[];
 
   /** Gets the total cost of all transactions. */
   getTotalCost() {
@@ -19,6 +19,7 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
     this.cart = JSON.parse(localStorage.getItem('products') || '[]');
+    this.transactions= this.cart
     console.log(this.cart)
   }
 

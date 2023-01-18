@@ -17,3 +17,17 @@ mat-toolbar {
     font-family: Century Gothic ;
     font-size: 15px;
   }
+  .btnIngresar:hover{
+    background-color:cadetblue;
+    color:whitesmoke;
+  }
+
+  .btncarro{
+    border-radius: 40%;
+    border:1px solid;
+    background-color:whitesmoke;
+  }
+  .btncarro:hover{
+    background-color: cadetblue;
+    color: whitesmoke;
+  }

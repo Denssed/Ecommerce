@@ -1,9 +1,35 @@
-table {
-  width: 50%;
-  height: 300px;
+.test {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 tr.mat-mdc-footer-row td {
   font-weight: bold;
 }
 
+tr{
+  margin:1em
+}
+
+img {
+  width: 30%;
+  height: 100%;
+  border-style: none;
+  border-style: solid;
+  border-color:grey;
+  padding: 1em;  
+}
+
+.btnEliminar{
+  border-radius: 0.5em;
+  border-style: solid;
+  border-color:crimson;
+  background-color: crimson;
+  color:whitesmoke;
+}
+.btnEliminar:hover{
+  background-color:lavenderblush;
+  color:black;
+}
