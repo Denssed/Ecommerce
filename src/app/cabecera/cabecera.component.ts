@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-cabecera',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./cabecera.component.css']
 })
 export class CabeceraComponent {
-
+    static cn = 0;
+    get staticCount() {
+      return CabeceraComponent.cn;
+    }
 }

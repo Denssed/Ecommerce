@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -11,7 +12,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
   exports:[
     MatToolbarModule,
     MatIconModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTableModule
   ],
   imports: [
     CommonModule
