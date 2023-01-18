@@ -8,7 +8,6 @@ const routes:Routes=[
   {path:'home',component:HomeComponent},
   // {path:'dashboard',component:DashboardComponent},
   // {path:'login', component:LoginComponent},
-  // {path:'cart', component:CartComponent},
   // {path:'test1', component:testComponent},
   // {path:'test2', component:testComponent},
   { path: 'cart', component: CartComponent }

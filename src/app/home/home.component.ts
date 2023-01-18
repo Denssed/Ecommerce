@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import productsData from '../products.json'
+import productsData from '../products.json';
 
 @Component({
   selector: 'Home',

@@ -5,7 +5,10 @@
         <div class="card-body">
           <h5 class="card-title">{{nombre}}</h5>
           <p class="card-text">{{tipo}}</p>
-          <a href="#" class="btn btn-primary" (click)="addToCart()">Agregar al carro</a>
+          <p class="card-text">${{costo}}</p>
+          <a href="#" class="btn btn-primary" 
+          (click)="addToCart();">
+          Agregar al carro</a>
         </div>
       </div>
     

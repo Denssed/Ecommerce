@@ -13,7 +13,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { HomeComponent } from './home/home.component';
 import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
 import { ProductCardComponent } from './Components/product-card/product-card.component';
-import { PedidoComponent } from './pedido/pedido/pedido.component';
 import { CartComponent } from './pedido/cart/cart.component';
 
 
@@ -28,7 +27,6 @@ import { CartComponent } from './pedido/cart/cart.component';
     HomeComponent,
     PiePaginaComponent,
     ProductCardComponent,
-    PedidoComponent,
     CartComponent
     ],
   imports: [

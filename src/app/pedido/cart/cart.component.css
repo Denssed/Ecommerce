@@ -1,0 +1,9 @@
+table {
+  width: 50%;
+  height: 300px;
+}
+
+tr.mat-mdc-footer-row td {
+  font-weight: bold;
+}
+

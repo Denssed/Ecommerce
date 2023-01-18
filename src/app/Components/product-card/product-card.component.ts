@@ -1,6 +1,5 @@
 import { Input } from '@angular/core';
 import { Component } from '@angular/core';
-import angular from 'angular';
 import { CabeceraComponent } from 'src/app/cabecera/cabecera.component';
 
 @Component({
@@ -14,9 +13,15 @@ export class ProductCardComponent {
   @Input() marca = '';
   @Input() tipo = '';
   @Input() img = '';
+  @Input() costo= '';
 
 
   public addToCart() {
+    // *ngFor "let product = productos"
+
+  }
+
+  public addPedido() {
     CabeceraComponent.cn += 1; 
   }
 
