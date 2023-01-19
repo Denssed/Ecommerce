@@ -12,7 +12,7 @@ const routes:Routes=[
   {path:'dashboard',component:DashboardComponent},
   {path:'login', component:LoginComponent},
   {path:'profile', component:ProfileComponent},
-  { path: 'cart', component: CartComponent }
+  { path:'cart', component: CartComponent }
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

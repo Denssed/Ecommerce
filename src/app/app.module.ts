@@ -20,8 +20,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AddProductsComponent } from './Components/add-products/add-products.component';
 import { ModifyProductsComponent } from './Components/modify-products/modify-products.component';
-
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -42,6 +41,7 @@ import { ModifyProductsComponent } from './Components/modify-products/modify-pro
     ModifyProductsComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

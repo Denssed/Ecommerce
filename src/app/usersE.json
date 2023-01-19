@@ -1,6 +1,5 @@
 {"usersE": [
     {
-        "email": "carlos@gmail.com",
         "usuario": "Carlos",
         "apellido": "Carranza",
         "password": "198",
@@ -8,7 +7,6 @@
         "edad":"23"
     },
     {
-        "email": "jeremy@gmail.com",
         "usuario": "Jeremy",
         "apellido": "Rodriguez",
         "password": "198",
