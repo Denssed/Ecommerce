@@ -1,49 +1,41 @@
 <div style="text-align:center;">
       <mat-card-title>Perfil</mat-card-title>
 </div>
-<br>
-<form [formGroup]="datoNuevo">
-  <mat-form-field appearance="fill">
-    <mat-label>Enter your email</mat-label>
-    <input matInput placeholder="pat@example.com" [formControl]="email" required>
-    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-  </mat-form-field>
-   <br>
-
-  <mat-form-field class="campos-field">
-   <input matInput placeholder="Nombre" formControlName="nombre">
-  </mat-form-field>
-  <br>
-
-  <mat-form-field class="campos-field">
-    <input matInput placeholder="Apellido" formControlName="apellido">
-  </mat-form-field>
-  <br>
-
-  <mat-form-field appearance="fill">
-    <mat-label>Enter your password</mat-label>
-    <input matInput [type]="hide ? 'password' : 'text'">
-    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-    </button>
-  </mat-form-field>
-  <br>
-
-  <mat-form-field hintLabel="Max 10 characters" appearance="fill">
-    <mat-label>Enter some input</mat-label>
-    <input matInput #input maxlength="10">
-    <mat-hint align="end">{{input.value.length}}/10</mat-hint>
-  </mat-form-field>
-  <br>
-
-  <mat-form-field class="campos-field">
-    <input matInput placeholder="Edad" formControlName="edad">
-  </mat-form-field>
-  <br>
-  
-  <button mat-raised-button [disabled] = "!datoNuevo.valid" (click)="onSubmit()">Aceptar</button>  
-  <button mat-raised-button color="accent" (click)="cancelar()">Cancelar</button>
-  <button mat-raised-button color="accent" (click)="goBack()">Atrás</button>
-</form>
+<main>
+  <div class="container grid grid-place-center h-100">
+     <div class="form">
+        <h1 class="title text-center">Información de Contacto</h1>
+        <div class="body">
+           <form #formularioRegistro="ngForm" (ngSubmit)="registrarPersona(formularioRegistro)">
+              <label class="label" for="usuacedulario">
+                 Cédula
+                 <input class="input" type="tel" name="cedula" id="cedula" [(ngModel)]="cedula" placeholder="Ingrese su C.I.">
+              </label>
+            <br>
+              <label class="label" for="nombre">
+                 Nombre
+                 <input class="input" type="text" name="nombre" id="nombre" [(ngModel)]="nombre" placeholder="Ingrese su Nombre">
+              </label>
+            <br>
+              <label class="label" for="apellido">
+                 Apellido
+                 <input class="input" type="text" name="apellido" id="apellido" [(ngModel)]="apellido" placeholder="Ingrese su Apellido">
+              </label>
+              <br>
+              <label class="label" for="Location">
+                 Location
+                 <input class="input" type="text" name="location" [(ngModel)]="location" id="location" placeholder="Ingrese su Location">
+              </label>
+              <br>
+              <div class="flex flex-justify-between flex-align-center">
+                 <input class="input input--submit input--submit--cancel" (click)="pantallaInicio()" type="button"
+                    value="Cancelar">
+                 <input class="input input--submit" type="submit" value="Aceptar">
+              </div>
+           </form>
+        </div>
+     </div>
+  </div>
+</main>
 
 

@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import usersData from '../users.json'
-import usersEData from '../usersE.json'
 
 @Component({
   selector: 'app-login',
@@ -17,27 +15,43 @@ export class LoginComponent {
 
   alert: boolean = false;
 
-  users = usersData.users;
-  usersE = usersEData.usersE;
-  
   usuarioLogin = new FormGroup({
-    email: new FormControl('', Validators.required),
+    email: new FormControl('',Validators.required),
     password: new FormControl('', Validators.required)
   })
   
-  onSubmit(): void{
-    if (this.usuarioLogin.value.email && this.usuarioLogin.value.password)
+  onSubmit(){
+
+    if (this.usuarioLogin.value.email=="jorge@gmail.com" && this.usuarioLogin.value.password=="123")
+    {
+      this.router.navigate(['/home']);
+      this.dialogoRef.close();
+    }
+    if (this.usuarioLogin.value.email=="geraldine@gmail.com" && this.usuarioLogin.value.password=="123")
     {
       this.router.navigate(['/home']);
       this.dialogoRef.close();
     }
     else
     {
+      this.alert = true;
+      setTimeout(() => this.alert=false, 4000);
+    }
+
+    if (this.usuarioLogin.value.email=="jeremy@gmail.com" && this.usuarioLogin.value.password=="198")
+    {
       this.router.navigate(['/dashboard']);
       this.dialogoRef.close();
     }
-  }
-
-  ngOnInit(): void{
+    if (this.usuarioLogin.value.email=="carlos@gmail.com" && this.usuarioLogin.value.password=="198")
+    {
+      this.router.navigate(['/dashboard']);
+      this.dialogoRef.close();
+    }
+    else
+    {
+      this.alert = true;
+      setTimeout(() => this.alert=false, 4000);
+    }
   }
 }

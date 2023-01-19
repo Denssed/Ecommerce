@@ -1,6 +1,5 @@
 {"users": [
     {
-        "email": "jorge@gmail.com",
         "usuario": "Jorge",
         "apellido": "Molina",
         "password": "123",
@@ -8,7 +7,6 @@
         "edad":"21"
     },
     {
-        "email": "geraldine@gmail.com",
         "usuario": "Geraldine",
         "apellido": "Roca",
         "password": "123",

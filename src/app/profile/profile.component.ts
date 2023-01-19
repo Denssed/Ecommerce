@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatDialogRef } from '@angular/material/dialog';
-import { NavigationExtras, Router } from '@angular/router';
-import { Location } from '@angular/common';
-import usersData from '../users.json'
-import usersEData from '../usersE.json'
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-profile',
@@ -13,61 +9,53 @@ import usersEData from '../usersE.json'
   })
 
 export class ProfileComponent {  
-  constructor(private router: Router, private dialogRef: MatDialogRef<ProfileComponent>, private location:Location) { }
-  
-  hide = true;
+  cedula?: String;
+  nombre?: String;
+  apellido?: String;
+  location?: String;
 
-  email = new FormControl('', [Validators.required, Validators.email]);
+  constructor(private enrutador: Router) {}
 
-  getErrorMessage() {
-    if (this.email.hasError('required')) {
-      return 'You must enter a value';
+  personasRegistradas: Object[] = [];
+
+  registrarPersona(formulario: NgForm) {
+    const cedula: String = formulario.value.cedula.trim();
+    const nombre: String = formulario.value.nombre.trim();
+    const apellido: String = formulario.value.apellido.trim();
+    const location: String = formulario.value.location.trim();
+
+    if (
+      cedula !== '' &&
+      nombre !== '' &&
+      apellido !== '' &&
+      location !== ''
+    ) {
+      const persona: Object = {
+        cedula: cedula,
+        nombre: nombre,
+        apellido: apellido,
+        contrasena: location,
+      };
+      this.personasRegistradas.push(persona);
+      console.table(this.personasRegistradas);
+      alert(
+        '¡Sus datos fueron cambiados!' +
+          this.personasRegistradas.length
+      );
+      this.limpiarCampos();
+    } else {
+      alert('¡Complete Todos los Campos!');
     }
-
-    return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 
-  users = usersData.users;
-  usersE = usersEData.usersE;
-
-  datoNuevo = new FormGroup({
-    email: new FormControl('', Validators.required),
-    usuario: new FormControl('', Validators.required),
-    apellido: new FormControl('', Validators.required),
-    password: new FormControl('', Validators.required),
-    cedula: new FormControl('', Validators.required),
-    edad: new FormControl('', Validators.required)
-  })
-
-  onSubmit(){
-    let objToSend: NavigationExtras = {
-      queryParams: {
-        email: this.datoNuevo.value.usuario,
-        usuario: this.datoNuevo.value.usuario,
-        apellido: this.datoNuevo.value.apellido,
-        password: this.datoNuevo.value.password,
-        cedula: this.datoNuevo.value.cedula,
-        edad: this.datoNuevo.value.edad
-      },
-      skipLocationChange: false,
-      fragment: 'top' 
-    };
-
-    this.dialogRef.close(); 
-    this.redirectTo('/home', objToSend);
+  limpiarCampos() {
+    this.cedula = '';
+    this.nombre = '';
+    this.apellido = '';
+    this.location = '';
   }
 
-  redirectTo(uri:string, objToSend:NavigationExtras){
-    this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
-    this.router.navigate([uri],{ state: { datoNuevo: objToSend}}));
+  pantallaInicio() {
+    this.enrutador.navigate(['/']);
   }
-
-  cancelar(){
-    this.dialogRef.close(); 
-  }
-
-  goBack() :void{
-    this.location.back();
-  }
-
 }

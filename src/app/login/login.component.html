@@ -6,12 +6,12 @@
 
 <form [formGroup]="usuarioLogin" (ngSubmit)="onSubmit()">
     <mat-form-field class="campos-field">
-        <mat-label>Email</mat-label>
-        <input type="email" matInput placeholder="Ex. pat@gmail.com" formControlName="email">
+        <label for="exampleFormControlInput" class="form-label">E-mail</label><br>
+        <input type="email" matInput placeholder="mat@gmail.com" formControlName="email">
     </mat-form-field>
 
     <mat-form-field class="campos-field">
-        <mat-label>Password</mat-label>
+        <label for="exampleFormControlInput1" class="form-label">Password</label><br>
         <input type="password" matInput placeholder="Password" formControlName="password">
     </mat-form-field>
 

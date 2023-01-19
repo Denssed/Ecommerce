@@ -4,14 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from "./login/login.component";
 import { ProfileComponent } from './profile/profile.component';
 import { CartComponent } from './pedido/cart/cart.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes:Routes=[
   {path:'',component:HomeComponent},
   {path:'home',component:HomeComponent},
-  // {path:'dashboard',component:DashboardComponent},
+  {path:'dashboard',component:DashboardComponent},
   {path:'login', component:LoginComponent},
   {path:'profile', component:ProfileComponent},
-  { path: 'cart', component: CartComponent }
+  { path:'cart', component: CartComponent }
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
