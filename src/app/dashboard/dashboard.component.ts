@@ -34,19 +34,24 @@ export class DashboardComponent implements OnInit {
 
     this.nav = this.router.getCurrentNavigation();
     this.addproduct = this.nav.extras.state;
-    console.log(this.nav, 'addProduct');
-    console.log(this.addproduct, 'addProduct');
+    // console.log(this.nav, 'addProduct');
+    // console.log(this.addproduct, 'addProduct');
     
+    // console.log(this.addproduct);
     // if (this.addproduct != null)
     // {      
     //   const newData = this.dataSource.map((product: any) => { 
     //     console.log(product, 'cliente');
-    //     // if(product.nombre === this.addproduct.product.queryParams.nombre) product = this.addproduct.product.queryParams
-    //     // return product
+    //     if(product.nombre === this.addproduct.product.queryParams.nombre) product = this.addproduct.product.queryParams
+    //     console.log(product);
+    //     return product
     //   })
     //   this.dataSource = newData;
     // } else {
-    //   if (this.addproduct?.product?.queryParams) this.addproduct.push(this.addproduct.product.queryParams);
+      // let store = JSON.parse(localStorage['store']) as const
+      // JSON.stringify(...store, this.addproduct.product.queryParams)
+      // localStorage.setItem('store', JSON.stringify(...store, this.addproduct.product.queryParams))
+      // if (this.addproduct?.product?.queryParams) this.addproduct.push(this.addproduct.product.queryParams);
     // }
     
 

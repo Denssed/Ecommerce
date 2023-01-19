@@ -27,10 +27,10 @@ export class AddProductsComponent {
   {
     let objToSend: NavigationExtras = {
       queryParams: {
-        cedula: this.product.value.nombre,
-        nombres: this.product.value.marca,
-        apellidos: this.product.value.tipo,
-        direccion: this.product.value.costo
+        nombre: this.product.value.nombre,
+        marca: this.product.value.marca,
+        tipo: this.product.value.tipo,
+        costo: this.product.value.costo
       },
       skipLocationChange: false,
       fragment: 'top' 

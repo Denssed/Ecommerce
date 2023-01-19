@@ -7,7 +7,7 @@ import { CartComponent } from './pedido/cart/cart.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes:Routes=[
-  {path:'',component:HomeComponent},
+  {path:'',component:LoginComponent},
   {path:'home',component:HomeComponent},
   {path:'dashboard',component:DashboardComponent},
   {path:'login', component:LoginComponent},
