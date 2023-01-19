@@ -1,0 +1,27 @@
+<mat-card> 
+    <div style="text-align:center;">
+        <mat-card-title>Nuevo Producto</mat-card-title>
+    </div>   
+    <br>
+    <form [formGroup]="product">
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Nombre" formControlName="nombre">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Marca" formControlName="marca">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Tipo" formControlName="tipo">
+        </mat-form-field>
+
+        <mat-form-field class="campos-field">
+            <input matInput placeholder="Costo" formControlName="costo">
+        </mat-form-field>
+
+        <button mat-raised-button [disabled] = "!product.valid" (click)="onSubmit()">Aceptar</button>  
+        <button mat-raised-button color="accent" (click)="cancelar()">Cancelar</button>      
+    </form>
+    
+</mat-card>

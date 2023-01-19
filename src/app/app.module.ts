@@ -18,6 +18,8 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MatDialogRef } from '@angular/material/dialog';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AddProductsComponent } from './Components/add-products/add-products.component';
+import { ModifyProductsComponent } from './Components/modify-products/modify-products.component';
 
 
 
@@ -36,6 +38,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CartComponent,
     LoginComponent,
     DashboardComponent,
+    AddProductsComponent,
+    ModifyProductsComponent,
   ],
   imports: [
     BrowserModule,
