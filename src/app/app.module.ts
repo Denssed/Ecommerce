@@ -18,8 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MatDialogRef } from '@angular/material/dialog';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -38,6 +37,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     DashboardComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
